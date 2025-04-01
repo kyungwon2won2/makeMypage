@@ -9,3 +9,15 @@ function phone(){
     confirmButtonText : "닫기"
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cardReveals = document.querySelectorAll('.card-reveal');
+
+  cardReveals.forEach((reveal) => {
+    reveal.addEventListener('click', function () {
+      this.style.transform = 'translateY(100%)';
+    });
+  });
+});
+
+
